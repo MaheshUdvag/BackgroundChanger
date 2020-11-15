@@ -1,0 +1,56 @@
+html,body {
+    margin: 0;
+}
+
+.video-container {
+    /* The css for the video background */
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    /* css for the content to be displayed over the video */
+    margin-top: 100px;
+    background-color: transparent;
+    font-size: 30px;
+    text-align: center;
+}
+
+.video-container video {
+    /* The css for the video so that the video is shown resopnsive irrespective of size */
+    z-index: -1;
+    position: absolute;
+    /* Hegiht Weight set auto for good video quality */
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    /* This depends on the resolution of the video which you are going to have */
+    top:30%;
+    left: 40%;
+    transform: translate(-40%,-40%);
+}
+
+/* Other css for the content elements */
+
+button {
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    color: turquoise;
+}
+
+.hide {
+    display: none;
+}
+
+.title {
+    color: blueviolet;
+    font-weight: bolder;    
+}
+
+span {
+    background-color: white;
+}

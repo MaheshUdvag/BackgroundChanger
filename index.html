@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="index.css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+<body>
+    <div class="video-container hide" id="movie">
+        <video autoplay muted loop>
+            <source src="movie.mp4" type="video/mp4" />
+        </video>
+        <div class="content">
+            <h3 class="title">Welcome to background Video Changer</h3>
+            <button onclick="cricket()">Cricket</button>
+            <button onclick="movie()">Movie</button>
+        </div>
+    </div>
+    <div class="video-container" id="cricket">
+        <video autoplay muted loop>
+            <source src="cricket.mp4" type="video/mp4" />
+        </video>
+        <div class="content">
+            <h3 class="title">Welcome to background Video Changer</h3>
+            <button onclick="cricket()">Cricket</button>
+            <button onclick="movie()">Movie</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
